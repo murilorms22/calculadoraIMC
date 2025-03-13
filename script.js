@@ -10,9 +10,22 @@ function calcularIMC() {
     
     document.getElementById('numIMC').innerHTML = resultadoIMC.toFixed(1);
     progresso.value = resultadoIMC;
+    
+    let cor;
+    if(resultadoIMC < 18.59) {
+        cor = "rgb(59, 242, 255)";
+    } else if(resultadoIMC >= 18.6 && resultadoIMC < 24.99) {
+        cor = "rgb(9, 255, 0)";
+    }else if (resultadoIMC >= 25.0) {
+        cor = "rgb(187, 0, 0)";
+    }
+
+    progresso.style.setProperty("--cor-imc", cor);
+    progresso.style.display = "flex";
 
     if(resultadoIMC < 18.59) {
-        status.innerHTML = "Abaixo do normal"
+        status.innerHTML = "Abaixo do normal";
+
     } else if (resultadoIMC >= 18.6 && resultadoIMC <= 24.99) {
         status.innerHTML = "Ideal"
     } else if (resultadoIMC >= 25.0 && resultadoIMC <= 29.99) {

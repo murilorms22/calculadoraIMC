@@ -3,6 +3,7 @@
     --texto-escuro: rgb(20, 20, 20);
     --gradient-roxo: linear-gradient(0deg, rgb(68, 48, 245) 0%, rgb(82, 19, 255) 100%);
     --gradient-roxo-hover: linear-gradient(0deg, rgba(71, 52, 243, 0.95) 0%, rgba(91, 31, 255, 0.95) 100%);
+    --cor-imc: rgb(114, 98, 255);
 }
 
 * {
@@ -113,6 +114,7 @@ body {
     border-radius: 20px;
     width: 80%;
     cursor: pointer;
+    font-size: 30px;
 }
 
 button#btnCalc:hover {
@@ -143,6 +145,8 @@ button#btnCalc:hover {
     position: relative;
     bottom: -50px;
     font-size: 15px;
+    display: flex;
+    flex-direction: column;
 }
 
 progress {
@@ -151,6 +155,8 @@ progress {
     margin-bottom: 8%;
     border-radius: 10px;
     overflow: hidden;
+
+    display: none;
 }
 
 progress::-webkit-progress-bar {
@@ -158,5 +164,5 @@ progress::-webkit-progress-bar {
 }
 
 progress::-webkit-progress-value {
-    background-color: rgb(0, 241, 0);
+    background-color: var(--cor-imc);
 }
