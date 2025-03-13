@@ -1,0 +1,151 @@
+:root {
+    --texto-claro: rgb(255, 255, 255);
+    --texto-escuro: rgb(20, 20, 20);
+    --gradient-roxo: linear-gradient(0deg, rgb(68, 48, 245) 0%, rgb(82, 19, 255) 100%);
+    --gradient-roxo-hover: linear-gradient(0deg, rgba(71, 52, 243, 0.95) 0%, rgba(91, 31, 255, 0.95) 100%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+    font-family: Outfit;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(226, 226, 226);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.container {
+    width: 1100px;
+    height: 600px;
+    background-color: var(--texto-claro);
+    border-radius: 48px;
+}
+
+.containerConteudo {
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+}
+
+.campo-resultado {
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(0deg, rgb(49, 43, 235) 0%, rgba(104, 68, 250, 1) 100%);
+    border-radius: 8%;
+
+    color: var(--texto-claro);
+
+}
+
+.conteudo-resultado {
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    
+    align-items: center;
+    justify-content: center;
+
+    height: 100%;
+}
+
+#tela {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0px auto;
+    width: 250px;
+    height: 250px;
+    font-size: 45px;
+
+    border-radius: 100%;
+    background: var(--gradient-roxo);
+    margin-bottom: 3%;
+}
+
+.conteudo-resultado span{
+    border-radius: 5px;
+    font-size: 20px;
+    font-weight: 200;
+}
+
+.conteudo-resultado p {
+    margin-bottom: 5%;
+    font-weight: 500;
+    font-size: 40px;
+    margin-top: 10px;
+}
+
+.campo-form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    
+    align-items: center;
+    justify-content: center;
+}
+
+.conteudo-form {
+    color: var(--texto-escuro);
+    display: flex;
+    flex-direction: column;
+    margin: 0px auto;
+    width: 350px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.conteudo-form button#btnCalc {
+    padding: 15px;
+    background: var(--gradient-roxo);
+    color: var(--texto-claro);
+    border: none;
+    border-radius: 20px;
+    width: 80%;
+    cursor: pointer;
+}
+
+button#btnCalc:hover {
+    transform: scale(102%);
+    background: var(--gradient-roxo-hover);
+}
+
+.conteudo-form label {
+    font-weight: 200;
+    font-size: 45px;
+}
+
+.conteudo-form input[type="text"] {
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid rgba(25, 25, 25, .4);
+    outline: none;
+    font-size: 30px;
+    text-align: center;
+    width: 50%;
+    margin-bottom: 10%;
+}
+
+#aviso {
+    color: var(--texto-escuro);
+    width: 70%;
+    text-align: center;
+    position: relative;
+    bottom: -50px;
+    font-size: 15px;
+}
+
+progress {
+    width: 40%;
+    margin-bottom: 8%;
+}
