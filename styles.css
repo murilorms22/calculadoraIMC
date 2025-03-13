@@ -30,6 +30,7 @@ body {
     height: 600px;
     background-color: var(--texto-claro);
     border-radius: 48px;
+    box-shadow: 0px 0px 15px 1px rgba(25, 25, 25, .4);
 }
 
 .containerConteudo {
@@ -161,8 +162,10 @@ progress {
 
 progress::-webkit-progress-bar {
     background: var(--texto-claro);
+    transition: 0.5s ease;
 }
 
 progress::-webkit-progress-value {
     background-color: var(--cor-imc);
+    transition: 0.5s ease;
 }
