@@ -40,3 +40,12 @@ function calcularIMC() {
 
     medidas.innerHTML = "Peso: " + inputPeso + "kg | Altura: " + inputAltura.toFixed(2) + "m";
 }
+
+function showIMCimg() {
+    let btn = document.getElementById('texto-topo');
+    const dialogo = document.querySelector("dialog");
+
+    btn.addEventListener("onclick", () => {
+        dialogo.setAttribute('open')
+    })
+}
