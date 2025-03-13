@@ -4,10 +4,12 @@ function calcularIMC() {
     let resultadoIMC;
     let status = document.getElementById('status');
     let medidas = document.getElementById('medidas');
+    let progresso = document.getElementById('barraProgresso');
 
     resultadoIMC = Number(inputPeso) / Number(inputAltura * inputAltura);
     
     document.getElementById('numIMC').innerHTML = resultadoIMC.toFixed(1);
+    progresso.value = resultadoIMC;
 
     if(resultadoIMC < 18.59) {
         status.innerHTML = "Abaixo do normal"

@@ -147,5 +147,16 @@ button#btnCalc:hover {
 
 progress {
     width: 40%;
+    height: 30px;
     margin-bottom: 8%;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+progress::-webkit-progress-bar {
+    background: var(--texto-claro);
+}
+
+progress::-webkit-progress-value {
+    background-color: rgb(0, 241, 0);
 }
