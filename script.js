@@ -21,7 +21,7 @@ function calcularIMC() {
     }
 
     progresso.style.setProperty("--cor-imc", cor);
-    progresso.style.display = "flex";
+    progresso.style.opacity = "1";
 
     if(resultadoIMC < 18.59) {
         status.innerHTML = "Abaixo do normal";

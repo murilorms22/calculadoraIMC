@@ -157,7 +157,8 @@ progress {
     border-radius: 10px;
     overflow: hidden;
 
-    display: none;
+    opacity: 0;
+    transition: 0.5s ease;
 }
 
 progress::-webkit-progress-bar {
