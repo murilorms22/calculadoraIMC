@@ -193,3 +193,36 @@ progress::-webkit-progress-value {
     background-color: var(--cor-imc);
     transition: 0.3s ease;
 }
+
+
+dialog#dialogID {
+    margin: auto auto;
+    border: none;
+    background-color: var(--texto-claro);
+    padding: 20px 20px;
+    border-radius: 46px;
+}
+
+dialog div img {
+    border-radius: 30px;
+}
+
+dialog button {
+    display: flex;
+    margin: auto auto;
+    padding: 10px 40px;
+    background-color: rgb(255, 85, 85);
+
+    font-size: 30px;
+    font-family: Outfit;
+    color: var(--texto-claro);
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+
+    margin-top: 10px;
+}
+
+dialog button:hover {
+    background-color: rgb(255, 32, 32);
+}

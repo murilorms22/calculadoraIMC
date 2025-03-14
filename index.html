@@ -11,8 +11,11 @@
     <title>IMC Calculator</title>
   </head>
   <body>
-    <dialog>
-        <img src="./images/imc.jpg" alt="">
+    <dialog id="dialogID">
+        <div>
+            <img src="./images/imc.jpg" alt="IMC tabela">
+        </div>
+        <button id="dialog-btn">Fechar</button>
     </dialog>
     <button id="textoTopo"><h1>Visualizar tabela IMC</h1></button>
     <div class="container">
@@ -20,11 +23,11 @@
             <div class="campo-resultado">
                 <div class="conteudo-resultado">
                     <div id="tela">
-                        <h1 id="numIMC">76</h1>
+                        <h1 id="numIMC">IMC</h1>
                     </div>
-                    <p id="status">Great</p>
+                    <p id="status">Calculadora</p>
                     <progress id="barraProgresso" value="10" max="40"></progress>
-                    <span id="medidas">Peso: 80kg | Altura: 186cm</span>
+                    <span id="medidas"></span>
                 </div>
             </div>
             <div class="campo-form">

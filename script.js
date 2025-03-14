@@ -41,11 +41,27 @@ function calcularIMC() {
     medidas.innerHTML = "Peso: " + inputPeso + "kg | Altura: " + inputAltura.toFixed(2) + "m";
 }
 
-function showIMCimg() {
-    let btn = document.getElementById('texto-topo');
-    const dialogo = document.querySelector("dialog");
 
-    btn.addEventListener("onclick", () => {
-        dialogo.setAttribute('open')
-    })
+function showIMCimg() {
+    let btn = document.getElementById('textoTopo');  
+    const dialogo = document.getElementById('dialogID');  
+
+    btn.addEventListener("click", () => {
+        dialogo.showModal(); 
+    });
 }
+
+    document.addEventListener('DOMContentLoaded', showIMCimg);
+
+function fechaDialog() {
+    let btnFecha = document.getElementById('dialog-btn');
+    const dialogo = document.getElementById('dialogID');
+
+    btnFecha.addEventListener("click", () => {
+        dialogo.close()
+    })
+
+}
+
+
+    document.addEventListener('DOMContentLoaded', fechaDialog);
