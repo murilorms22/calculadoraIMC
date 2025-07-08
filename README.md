@@ -7,7 +7,7 @@
 <p align="center">Preview do projeto finalizado :point_down:</p>
 
 <p align="center">
-  <img alt="projeto cadastro-usuários" src="src/assets/thumbnail - readme.png" width="100%">
+  <img alt="projeto cadastro-usuários" src="./images/Screenshot_1" width="100%">
 </p>
 
 ## 💻 Projeto
